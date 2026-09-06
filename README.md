@@ -4,15 +4,16 @@ Open datasets built from the [ThreatCluster](https://threatcluster.io) corpus:
 ransomware leak-site activity, CVE exploitation signals, and deduplicated
 security incidents. 100,711 rows in total, refreshed periodically.
 
-Also on the Hugging Face Hub under [@threatcluster](https://huggingface.co/threatcluster).
+Also on the [Hugging Face Hub](https://huggingface.co/threatcluster) and
+[Kaggle](https://www.kaggle.com/datasets/threatcluster/threat-intelligence-datasets).
 
 ## Datasets
 
-| Dataset | Contents | Rows | Hub |
+| Dataset | Contents | Rows | Mirrors |
 |---|---|---|---|
-| [`ransomware-leak-site-victims`](./ransomware-leak-site-victims) | Ransomware leak-site victims | 20,627 | [🤗 Hub](https://huggingface.co/datasets/threatcluster/ransomware-leak-site-victims) |
-| [`cve-exploitation-signals`](./cve-exploitation-signals) | CVE exploitation signals | 60,879 | [🤗 Hub](https://huggingface.co/datasets/threatcluster/cve-exploitation-signals) |
-| [`threat-incident-clusters`](./threat-incident-clusters) | Threat incident clusters | 19,205 | [🤗 Hub](https://huggingface.co/datasets/threatcluster/threat-incident-clusters) |
+| [`ransomware-leak-site-victims`](./ransomware-leak-site-victims) | Ransomware leak-site victims | 20,627 | [Hugging Face](https://huggingface.co/datasets/threatcluster/ransomware-leak-site-victims) · [Kaggle](https://www.kaggle.com/datasets/threatcluster/threat-intelligence-datasets) |
+| [`cve-exploitation-signals`](./cve-exploitation-signals) | CVE exploitation signals | 60,879 | [Hugging Face](https://huggingface.co/datasets/threatcluster/cve-exploitation-signals) · [Kaggle](https://www.kaggle.com/datasets/threatcluster/threat-intelligence-datasets) |
+| [`threat-incident-clusters`](./threat-incident-clusters) | Threat incident clusters | 19,205 | [Hugging Face](https://huggingface.co/datasets/threatcluster/threat-incident-clusters) · [Kaggle](https://www.kaggle.com/datasets/threatcluster/threat-intelligence-datasets) |
 
 Each directory holds newline-delimited JSON (`data.jsonl`, one object per line)
 and a dataset card describing every field and its caveats. Read the card before
@@ -63,6 +64,13 @@ are published, alongside links back to the original reporting.
 - **Incident titles and summaries are model-generated** and not human-verified.
 - **`threat_score` is a ranking signal, not a severity scale.** Significant
   incidents routinely score in the 20s.
+
+## Where else to get these
+
+- **Hugging Face** — https://huggingface.co/threatcluster (loads with `datasets.load_dataset`)
+- **Kaggle** — https://www.kaggle.com/datasets/threatcluster/threat-intelligence-datasets (all three as one dataset)
+- **This repository** — raw `data.jsonl` per dataset
+- **Live, queryable** — the [ThreatCluster API](https://threatcluster.io/api), free tier available
 
 ## Licence
 

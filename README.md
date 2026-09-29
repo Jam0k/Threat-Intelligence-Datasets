@@ -5,15 +5,16 @@ ransomware leak-site activity, CVE exploitation signals, and deduplicated
 security incidents. 100,711 rows in total, refreshed periodically.
 
 Also on the [Hugging Face Hub](https://huggingface.co/threatcluster) and
-[Kaggle](https://www.kaggle.com/datasets/threatcluster/threat-intelligence-datasets).
+[Kaggle](https://www.kaggle.com/datasets/threatcluster/threat-intelligence-datasets). What each one covers
+and where it falls short: [threatcluster.io/datasets](https://threatcluster.io/datasets).
 
 ## Datasets
 
 | Dataset | Contents | Rows | Mirrors |
 |---|---|---|---|
-| [`ransomware-leak-site-victims`](./ransomware-leak-site-victims) | Ransomware leak-site victims | 20,627 | [Hugging Face](https://huggingface.co/datasets/threatcluster/ransomware-leak-site-victims) · [Kaggle](https://www.kaggle.com/datasets/threatcluster/threat-intelligence-datasets) |
-| [`cve-exploitation-signals`](./cve-exploitation-signals) | CVE exploitation signals | 60,879 | [Hugging Face](https://huggingface.co/datasets/threatcluster/cve-exploitation-signals) · [Kaggle](https://www.kaggle.com/datasets/threatcluster/threat-intelligence-datasets) |
-| [`threat-incident-clusters`](./threat-incident-clusters) | Threat incident clusters | 19,205 | [Hugging Face](https://huggingface.co/datasets/threatcluster/threat-incident-clusters) · [Kaggle](https://www.kaggle.com/datasets/threatcluster/threat-intelligence-datasets) |
+| [`ransomware-leak-site-victims`](./ransomware-leak-site-victims) | Ransomware leak-site victims ([live](https://threatcluster.io/dark-web/victims)) | 20,627 | [Hugging Face](https://huggingface.co/datasets/threatcluster/ransomware-leak-site-victims) · [Kaggle](https://www.kaggle.com/datasets/threatcluster/threat-intelligence-datasets) |
+| [`cve-exploitation-signals`](./cve-exploitation-signals) | CVE exploitation signals ([live](https://threatcluster.io/vulnerabilities)) | 60,879 | [Hugging Face](https://huggingface.co/datasets/threatcluster/cve-exploitation-signals) · [Kaggle](https://www.kaggle.com/datasets/threatcluster/threat-intelligence-datasets) |
+| [`threat-incident-clusters`](./threat-incident-clusters) | Threat incident clusters ([live](https://threatcluster.io/threats)) | 19,205 | [Hugging Face](https://huggingface.co/datasets/threatcluster/threat-incident-clusters) · [Kaggle](https://www.kaggle.com/datasets/threatcluster/threat-intelligence-datasets) |
 
 Each directory holds newline-delimited JSON (`data.jsonl`, one object per line)
 and a dataset card describing every field and its caveats. Read the card before
